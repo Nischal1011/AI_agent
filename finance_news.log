@@ -1,0 +1,554 @@
+2025-01-11 17:06:00,046 - INFO - Supabase client initialized successfully
+2025-01-11 17:06:00,046 - INFO - Gemini API configured successfully
+2025-01-11 17:06:00,046 - INFO - Starting financial news collection...
+2025-01-11 17:06:00,047 - INFO - Starting financial news processing
+2025-01-11 17:06:00,047 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:06:01,340 - INFO - Executing Brave search with query: Major market movements, Economic indicators, Policy changes, Global financial trends
+2025-01-11 17:06:02,423 - INFO - Found 3 articles from Brave search
+2025-01-11 17:06:02,423 - INFO - Analyzing article: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:06:06,621 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:06:06,980 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:06:06,989 - INFO - Successfully stored article summary
+2025-01-11 17:06:06,990 - INFO - Analyzing article: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:06:11,192 - INFO - Storing article from www.ft.com
+2025-01-11 17:06:11,421 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:06:11,422 - INFO - Successfully stored article summary
+2025-01-11 17:06:11,422 - INFO - Analyzing article: https://www.reuters.com/markets/
+2025-01-11 17:06:15,762 - INFO - Storing article from www.reuters.com
+2025-01-11 17:06:15,883 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:06:15,884 - INFO - Successfully stored article summary
+2025-01-11 17:06:15,885 - INFO - Finished collecting news
+2025-01-11 17:08:08,416 - INFO - Supabase client initialized successfully
+2025-01-11 17:08:08,416 - INFO - Gemini API configured successfully
+2025-01-11 17:08:08,417 - INFO - Starting financial news collection...
+2025-01-11 17:08:08,417 - INFO - Starting financial news processing
+2025-01-11 17:08:08,417 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:08:09,806 - INFO - Executing Brave search with query: Major market movements
+        - Economic indicators
+        - Policy changes
+        - Global financial trends
+2025-01-11 17:08:10,630 - INFO - Found 3 articles from Brave search
+2025-01-11 17:08:10,631 - INFO - Fetching content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:08:10,930 - INFO - Successfully extracted content from https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:08:10,931 - INFO - Analyzing article content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:08:12,083 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:08:12,414 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:08:12,421 - INFO - Successfully stored article summary
+2025-01-11 17:08:12,422 - INFO - Fetching content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:08:13,126 - INFO - Successfully extracted content from https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:08:13,127 - INFO - Analyzing article content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:08:14,591 - INFO - Storing article from www.ft.com
+2025-01-11 17:08:14,804 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:08:14,809 - INFO - Successfully stored article summary
+2025-01-11 17:08:14,809 - INFO - Fetching content from: https://www.reuters.com/markets/
+2025-01-11 17:08:15,004 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/markets/
+2025-01-11 17:08:15,005 - WARNING - Could not fetch content for: https://www.reuters.com/markets/
+2025-01-11 17:08:15,006 - INFO - Finished collecting news
+2025-01-11 17:09:30,127 - INFO - Supabase client initialized successfully
+2025-01-11 17:09:30,127 - INFO - Gemini API configured successfully
+2025-01-11 17:09:30,128 - INFO - Starting financial news collection...
+2025-01-11 17:09:30,128 - INFO - Starting financial news processing
+2025-01-11 17:09:30,129 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:09:31,569 - INFO - Executing Brave search with query: 
+        - Major market movements
+        - Economic indicators
+        - Policy changes
+        - Global financial trends
+2025-01-11 17:09:32,458 - INFO - Found 3 articles from Brave search
+2025-01-11 17:09:32,458 - INFO - Fetching content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:09:32,758 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:09:32,759 - INFO - Analyzing article content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:09:33,891 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:09:34,301 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:09:34,308 - INFO - Successfully stored article summary
+2025-01-11 17:09:34,308 - INFO - Fetching content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:09:34,968 - INFO - Successfully extracted 2481 characters from https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:09:34,969 - INFO - Analyzing article content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:09:36,144 - INFO - Storing article from www.ft.com
+2025-01-11 17:09:36,451 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:09:36,455 - INFO - Successfully stored article summary
+2025-01-11 17:09:36,456 - INFO - Fetching content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:09:36,685 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:09:36,686 - INFO - Analyzing article content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:09:37,780 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:09:37,883 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:09:37,884 - INFO - Successfully stored article summary
+2025-01-11 17:09:37,885 - INFO - Finished collecting news
+2025-01-11 17:11:52,312 - INFO - Supabase client initialized successfully
+2025-01-11 17:11:52,321 - INFO - Gemini API configured successfully
+2025-01-11 17:11:52,322 - INFO - Starting financial news collection...
+2025-01-11 17:11:52,360 - INFO - Starting financial news processing
+2025-01-11 17:11:52,361 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:11:55,259 - INFO - Executing Brave search with query: Search for the latest important financial news focusing on:
+        - Major market movements
+        - Economic indicators
+        - Policy changes
+        - Global financial trends
+2025-01-11 17:11:55,726 - ERROR - Brave Search API error: 422 Client Error: Unprocessable Entity for url: https://api.search.brave.com/res/v1/web/search?q=Search+for+the+latest+important+financial+news+focusing+on%3A%0A++++++++-+Major+market+movements%0A++++++++-+Economic+indicators%0A++++++++-+Policy+changes%0A++++++++-+Global+financial+trends+site%3Abloomberg.com+OR+site%3Areuters.com+OR+site%3Aft.com+OR+site%3Awsj.com&count=3&search_lang=en
+2025-01-11 17:11:55,740 - WARNING - No articles found
+2025-01-11 17:11:55,744 - INFO - Finished collecting news
+2025-01-11 17:12:46,617 - INFO - Supabase client initialized successfully
+2025-01-11 17:12:46,617 - INFO - Gemini API configured successfully
+2025-01-11 17:12:46,618 - INFO - Starting financial news collection...
+2025-01-11 17:12:46,619 - INFO - Starting financial news processing
+2025-01-11 17:12:46,619 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:12:48,147 - INFO - Executing Brave search with query: Latest financial news on market movements, economic indicators, policy changes, and global trends
+2025-01-11 17:12:49,033 - INFO - Found 3 articles from Brave search
+2025-01-11 17:12:49,040 - INFO - Fetching content from: https://www.reuters.com/markets/
+2025-01-11 17:12:49,209 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/markets/
+2025-01-11 17:12:49,209 - WARNING - Could not fetch content for: https://www.reuters.com/markets/
+2025-01-11 17:12:49,209 - INFO - Fetching content from: https://www.ft.com/markets
+2025-01-11 17:12:49,782 - INFO - Successfully extracted 7509 characters from https://www.ft.com/markets
+2025-01-11 17:12:49,783 - INFO - Analyzing article content from: https://www.ft.com/markets
+2025-01-11 17:12:54,393 - INFO - Storing article from www.ft.com
+2025-01-11 17:12:54,917 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:12:54,978 - INFO - Successfully stored article summary
+2025-01-11 17:12:54,979 - INFO - Fetching content from: https://www.reuters.com/markets/macromatters/
+2025-01-11 17:12:55,064 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/markets/macromatters/
+2025-01-11 17:12:55,064 - WARNING - Could not fetch content for: https://www.reuters.com/markets/macromatters/
+2025-01-11 17:12:55,065 - INFO - Finished collecting news
+2025-01-11 17:16:14,311 - INFO - Supabase client initialized successfully
+2025-01-11 17:16:14,311 - INFO - Gemini API configured successfully
+2025-01-11 17:16:14,312 - INFO - Starting financial news collection...
+2025-01-11 17:16:14,312 - INFO - Starting financial news processing
+2025-01-11 17:16:14,313 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:16:15,715 - INFO - Executing Brave search with query: Important financial news, major market movements, economic indicators, policy changes, and global financial trends
+2025-01-11 17:16:16,687 - INFO - Found 5 articles from Brave search
+2025-01-11 17:16:16,687 - INFO - Fetching content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:16:16,965 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:16:16,966 - INFO - Analyzing article content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:16:18,171 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:16:18,512 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:16:18,519 - INFO - Successfully stored article summary
+2025-01-11 17:16:18,520 - INFO - Fetching content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:16:18,735 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:16:18,736 - INFO - Analyzing article content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:16:19,950 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:16:20,138 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:16:20,139 - INFO - Successfully stored article summary
+2025-01-11 17:16:20,139 - INFO - Fetching content from: https://www.ft.com/markets
+2025-01-11 17:16:20,600 - INFO - Successfully extracted 7523 characters from https://www.ft.com/markets
+2025-01-11 17:16:20,600 - INFO - Analyzing article content from: https://www.ft.com/markets
+2025-01-11 17:16:23,400 - INFO - Storing article from www.ft.com
+2025-01-11 17:16:23,603 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:16:23,605 - INFO - Successfully stored article summary
+2025-01-11 17:16:23,606 - INFO - Finished collecting news
+2025-01-11 17:17:22,574 - INFO - Supabase client initialized successfully
+2025-01-11 17:17:22,575 - INFO - Gemini API configured successfully
+2025-01-11 17:17:22,575 - INFO - Starting financial news collection...
+2025-01-11 17:17:22,576 - INFO - Starting financial news processing
+2025-01-11 17:17:22,576 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:17:23,777 - INFO - Executing Brave search with query: Recent major market movements and policy changes
+2025-01-11 17:17:24,834 - INFO - Found 1 articles from Brave search
+2025-01-11 17:17:24,835 - INFO - Fetching content from: https://www.marketwatch.com/livecoverage/stock-market-today-dow-futures-lower-on-nvidia-export-fears-ahead-of-key-payrolls-data
+2025-01-11 17:17:25,090 - INFO - Successfully extracted 11004 characters from https://www.marketwatch.com/livecoverage/stock-market-today-dow-futures-lower-on-nvidia-export-fears-ahead-of-key-payrolls-data
+2025-01-11 17:17:25,090 - INFO - Analyzing article content from: https://www.marketwatch.com/livecoverage/stock-market-today-dow-futures-lower-on-nvidia-export-fears-ahead-of-key-payrolls-data
+2025-01-11 17:17:30,257 - INFO - Storing article from www.marketwatch.com
+2025-01-11 17:17:30,546 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:17:30,553 - INFO - Successfully stored article summary
+2025-01-11 17:17:30,554 - INFO - Finished collecting news
+2025-01-11 17:21:21,943 - INFO - Supabase client initialized successfully
+2025-01-11 17:21:21,943 - INFO - Gemini API configured successfully
+2025-01-11 17:21:21,944 - INFO - Starting financial news collection...
+2025-01-11 17:21:21,944 - INFO - Starting financial news processing
+2025-01-11 17:21:21,945 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:21:23,325 - INFO - Executing Brave search with query: The latest major market movements, economic indicators, policy changes, and global financial trends.
+2025-01-11 17:21:24,154 - INFO - Found 0 articles from Brave search
+2025-01-11 17:21:24,334 - ERROR - Brave Search API error: 429 Client Error: Too Many Requests for url: https://api.search.brave.com/res/v1/web/search?q=latest+financial+news+market+stocks+economy+site%3Amarketwatch.com+OR+site%3Ainvesting.com+OR+site%3Acnbc.com&count=10&search_lang=en&freshness=pd
+2025-01-11 17:21:24,335 - WARNING - No articles found
+2025-01-11 17:21:24,335 - ERROR - Failed to process any articles successfully
+2025-01-11 17:21:24,336 - INFO - Finished collecting news
+2025-01-11 17:21:51,908 - INFO - Supabase client initialized successfully
+2025-01-11 17:21:51,909 - INFO - Gemini API configured successfully
+2025-01-11 17:21:51,909 - INFO - Starting financial news collection...
+2025-01-11 17:21:51,910 - INFO - Starting financial news processing
+2025-01-11 17:21:51,910 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:21:53,530 - INFO - Executing Brave search with query: 
+        Search for the latest important financial news focusing on:
+        - Major market movements
+        - Economic indicators
+        - Policy changes
+        - Global financial trends
+        
+2025-01-11 17:21:53,711 - ERROR - Brave Search API error: 422 Client Error: Unprocessable Entity for url: https://api.search.brave.com/res/v1/web/search?q=%0A++++++++Search+for+the+latest+important+financial+news+focusing+on%3A%0A++++++++-+Major+market+movements%0A++++++++-+Economic+indicators%0A++++++++-+Policy+changes%0A++++++++-+Global+financial+trends%0A+++++++++site%3Abloomberg.com+OR+site%3Areuters.com+OR+site%3Aft.com+OR+site%3Awsj.com&count=3&search_lang=en
+2025-01-11 17:21:53,712 - WARNING - No articles found
+2025-01-11 17:21:53,713 - INFO - Finished collecting news
+2025-01-11 17:22:17,015 - INFO - Supabase client initialized successfully
+2025-01-11 17:22:17,016 - INFO - Gemini API configured successfully
+2025-01-11 17:22:17,016 - INFO - Starting financial news collection...
+2025-01-11 17:22:17,016 - INFO - Starting financial news processing
+2025-01-11 17:22:17,016 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:22:18,317 - INFO - Executing Brave search with query: Major market movements, Economic indicators, Policy changes, Global financial trends
+2025-01-11 17:22:19,289 - INFO - Found 3 articles from Brave search
+2025-01-11 17:22:19,289 - INFO - Fetching content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:22:19,590 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:22:19,591 - INFO - Analyzing article content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:22:20,721 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:22:21,074 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:22:21,082 - INFO - Successfully stored article summary
+2025-01-11 17:22:21,082 - INFO - Fetching content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:22:21,778 - INFO - Successfully extracted 2481 characters from https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:22:21,779 - INFO - Analyzing article content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:22:23,060 - INFO - Storing article from www.ft.com
+2025-01-11 17:22:23,278 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:22:23,282 - INFO - Successfully stored article summary
+2025-01-11 17:22:23,282 - INFO - Fetching content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:22:23,497 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:22:23,498 - INFO - Analyzing article content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:22:24,664 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:22:24,885 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:22:24,886 - INFO - Successfully stored article summary
+2025-01-11 17:22:24,887 - INFO - Finished collecting news
+2025-01-11 17:22:48,946 - INFO - Supabase client initialized successfully
+2025-01-11 17:22:48,947 - INFO - Gemini API configured successfully
+2025-01-11 17:22:48,948 - INFO - Starting financial news collection...
+2025-01-11 17:22:48,948 - INFO - Starting financial news processing
+2025-01-11 17:22:48,948 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:22:50,267 - INFO - Executing Brave search with query: latest important financial news focusing on major market movements, economic indicators, policy changes, and global financial trends
+2025-01-11 17:22:51,186 - INFO - Found 3 articles from Brave search
+2025-01-11 17:22:51,187 - INFO - Fetching content from: https://www.reuters.com/business/finance/
+2025-01-11 17:22:51,309 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/finance/
+2025-01-11 17:22:51,309 - WARNING - Could not fetch content for: https://www.reuters.com/business/finance/
+2025-01-11 17:22:51,310 - INFO - Fetching content from: https://www.ft.com/markets
+2025-01-11 17:22:51,815 - INFO - Successfully extracted 7523 characters from https://www.ft.com/markets
+2025-01-11 17:22:51,816 - INFO - Analyzing article content from: https://www.ft.com/markets
+2025-01-11 17:22:54,573 - INFO - Storing article from www.ft.com
+2025-01-11 17:22:54,853 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:22:54,861 - INFO - Successfully stored article summary
+2025-01-11 17:22:54,861 - INFO - Fetching content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:22:55,098 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:22:55,099 - INFO - Analyzing article content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:22:56,415 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:22:56,615 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:22:56,617 - INFO - Successfully stored article summary
+2025-01-11 17:22:56,618 - INFO - Finished collecting news
+2025-01-11 17:23:16,109 - INFO - Supabase client initialized successfully
+2025-01-11 17:23:16,110 - INFO - Gemini API configured successfully
+2025-01-11 17:23:16,110 - INFO - Starting financial news collection...
+2025-01-11 17:23:16,111 - INFO - Starting financial news processing
+2025-01-11 17:23:16,111 - INFO - Sending initial search prompt to Gemini
+2025-01-11 17:23:17,379 - INFO - Executing Brave search with query: Major market movements or Economic indicators or Policy changes or Global financial trends
+2025-01-11 17:23:18,216 - INFO - Found 3 articles from Brave search
+2025-01-11 17:23:18,217 - INFO - Fetching content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:23:18,448 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:23:18,449 - INFO - Analyzing article content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:23:19,448 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:23:19,711 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:23:19,718 - INFO - Successfully stored article summary
+2025-01-11 17:23:19,718 - INFO - Fetching content from: https://www.bloomberg.com/graphics/2025-investment-outlooks/
+2025-01-11 17:23:19,944 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/graphics/2025-investment-outlooks/
+2025-01-11 17:23:19,945 - INFO - Analyzing article content from: https://www.bloomberg.com/graphics/2025-investment-outlooks/
+2025-01-11 17:23:25,840 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:23:26,091 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:23:26,093 - INFO - Successfully stored article summary
+2025-01-11 17:23:26,093 - INFO - Fetching content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:23:26,320 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:23:26,320 - INFO - Analyzing article content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:23:27,755 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:23:27,965 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 17:23:27,967 - INFO - Successfully stored article summary
+2025-01-11 17:23:27,968 - INFO - Finished collecting news
+2025-01-11 17:26:06,630 - INFO - Supabase client initialized successfully
+2025-01-11 17:26:06,630 - INFO - Gemini API configured successfully
+2025-01-11 17:26:06,631 - INFO - Starting financial news processing
+2025-01-11 17:26:08,206 - INFO - Executing Brave search with query: 
+        Major market movements
+        Economic indicators
+        Policy changes
+        Global financial trends
+        
+2025-01-11 17:26:08,436 - ERROR - Brave Search API error: 422 Client Error: Unprocessable Entity for url: https://api.search.brave.com/res/v1/web/search?q=%0A++++++++Major+market+movements%0A++++++++Economic+indicators%0A++++++++Policy+changes%0A++++++++Global+financial+trends%0A+++++++++site%3Abloomberg.com+OR+site%3Areuters.com+OR+site%3Aft.com+OR+site%3Awsj.com&count=5&search_lang=en
+2025-01-11 17:26:08,437 - INFO - Finished processing financial news
+2025-01-11 17:26:41,320 - INFO - Supabase client initialized successfully
+2025-01-11 17:26:41,320 - INFO - Gemini API configured successfully
+2025-01-11 17:26:41,321 - INFO - Starting financial news processing
+2025-01-11 17:26:42,740 - INFO - Executing Brave search with query: Major market movements, economic indicators, policy changes, and global financial trends.
+2025-01-11 17:26:43,621 - INFO - Found 5 articles from Brave search
+2025-01-11 17:26:43,621 - INFO - Fetching content from: https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:26:43,887 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/graphics/world-economic-indicators-dashboard/
+2025-01-11 17:26:50,382 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:26:50,706 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:26:50,707 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'date' column of 'finance_news' in the schema cache"}
+2025-01-11 17:26:50,707 - INFO - Article stored: The 12 Global Economic Indicators to Watch
+2025-01-11 17:26:50,707 - INFO - Fetching content from: https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:26:50,931 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/markets/economic-calendar
+2025-01-11 17:26:56,909 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:26:57,192 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:26:57,194 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'date' column of 'finance_news' in the schema cache"}
+2025-01-11 17:26:57,194 - INFO - Article stored: Economic Calendar - Bloomberg - Bloomberg Markets
+2025-01-11 17:26:57,194 - INFO - Fetching content from: https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:26:57,804 - INFO - Successfully extracted 2481 characters from https://www.ft.com/content/85c4bd8d-84a2-4008-b86a-946c14706b2e
+2025-01-11 17:26:59,201 - INFO - Storing article from www.ft.com
+2025-01-11 17:26:59,395 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:26:59,397 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'date' column of 'finance_news' in the schema cache"}
+2025-01-11 17:26:59,397 - INFO - Article stored: The five global economic shifts happening now
+2025-01-11 17:26:59,398 - INFO - Finished processing financial news
+2025-01-11 17:27:52,217 - INFO - Supabase client initialized successfully
+2025-01-11 17:27:52,218 - INFO - Gemini API configured successfully
+2025-01-11 17:27:52,219 - INFO - Starting financial news processing
+2025-01-11 17:27:53,511 - INFO - Executing Brave search with query: Latest market movements, breaking economic news, recent policy changes, current global financial trends
+2025-01-11 17:27:54,477 - INFO - Found 0 articles from Brave search
+2025-01-11 17:27:54,479 - INFO - Finished processing financial news
+2025-01-11 17:28:19,486 - INFO - Supabase client initialized successfully
+2025-01-11 17:28:19,487 - INFO - Gemini API configured successfully
+2025-01-11 17:28:19,488 - INFO - Starting financial news processing
+2025-01-11 17:28:20,661 - INFO - Executing Brave search with query: What is the latest financial news?
+2025-01-11 17:28:21,586 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:28:21,586 - INFO - Brave Search API Response: {"query":{"original":"financial news market (site:bloomberg.com OR site:reuters.com)","show_strict_warning":false,"cleaned":"financial news market","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":false,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false},{"type":"web","index":1,"all":false},{"type":"web","index":2,"
+2025-01-11 17:28:21,587 - INFO - Found 5 articles from Brave search
+2025-01-11 17:28:21,588 - INFO - Fetching content from: https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:28:21,783 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:28:21,783 - INFO - Fetching content from: https://www.reuters.com/breakingviews/los-angeles-fires-expose-inflated-us-home-prices-2025-01-09/
+2025-01-11 17:28:21,874 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/breakingviews/los-angeles-fires-expose-inflated-us-home-prices-2025-01-09/
+2025-01-11 17:28:21,875 - INFO - Fetching content from: https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:28:22,155 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:28:23,151 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:28:23,439 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:28:23,439 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'date' column of 'finance_news' in the schema cache"}
+2025-01-11 17:28:23,439 - INFO - Article processed: FTSE 100 Live: Pound (GBP USD) Extends Drop, Gilt Yields Rise After ...
+2025-01-11 17:28:23,439 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:28:23,668 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:28:24,664 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:28:24,885 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:28:24,886 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'date' column of 'finance_news' in the schema cache"}
+2025-01-11 17:28:24,886 - INFO - Article processed: Stock Market Today: Dow, S&P Live Updates for January 10 - Bloomberg
+2025-01-11 17:28:24,886 - INFO - Fetching content from: https://www.reuters.com/markets/us/sinking-us-equity-risk-premium-rings-alarms-mcgeever-2025-01-10/
+2025-01-11 17:28:24,980 - ERROR - Error fetching article content: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/markets/us/sinking-us-equity-risk-premium-rings-alarms-mcgeever-2025-01-10/
+2025-01-11 17:28:24,981 - INFO - Finished processing financial news
+2025-01-11 17:29:00,853 - INFO - Supabase client initialized successfully
+2025-01-11 17:29:00,853 - INFO - Gemini API configured successfully
+2025-01-11 17:29:00,855 - INFO - Starting financial news processing
+2025-01-11 17:29:02,153 - INFO - Executing Brave search with query: Latest market movements, breaking economic news, recent policy changes, and current global financial trends
+2025-01-11 17:29:02,965 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:29:02,966 - INFO - Brave Search API Response: {"query":{"original":"financial news market site:bloomberg.com","show_strict_warning":false,"cleaned":"financial news market","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":true,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false},{"type":"web","index":1,"all":false},{"type":"web","index":2,"all":false}],"top":[],"s
+2025-01-11 17:29:02,966 - INFO - Found 3 articles from Brave search
+2025-01-11 17:29:02,967 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:29:03,226 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:29:04,453 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:29:04,784 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:29:04,785 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:29:04,785 - INFO - Article processed: Stock Market Today: Dow, S&P Live Updates for January 10 - Bloomberg
+2025-01-11 17:29:04,785 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-10/podcast-the-problem-with-financial-forecasts-is-they-re-usually-wrong
+2025-01-11 17:29:05,002 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/news/articles/2025-01-10/podcast-the-problem-with-financial-forecasts-is-they-re-usually-wrong
+2025-01-11 17:29:06,335 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:29:06,548 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:29:06,549 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:29:06,549 - INFO - Article processed: Podcast: The Problem With Financial Forecasts Is They’re Usually Wrong - Bloomberg
+2025-01-11 17:29:06,549 - INFO - Fetching content from: https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:29:06,762 - INFO - Successfully extracted 508 characters from https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:29:08,063 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:29:08,249 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:29:08,250 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:29:08,250 - INFO - Article processed: FTSE 100 Live: Pound (GBP USD) Extends Drop, Gilt Yields Rise After ...
+2025-01-11 17:29:08,251 - INFO - Finished processing financial news
+2025-01-11 17:30:46,924 - INFO - Supabase client initialized successfully
+2025-01-11 17:30:46,925 - INFO - Gemini API configured successfully
+2025-01-11 17:30:46,925 - INFO - Starting financial news processing
+2025-01-11 17:30:46,926 - INFO - Executing Brave search with query: breaking market news stocks bonds cryptocurrency
+2025-01-11 17:30:47,796 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:30:47,797 - INFO - Brave Search API Response: {"query":{"original":"site:bloomberg.com breaking market news stocks bonds cryptocurrency when:24h","show_strict_warning":false,"cleaned":"breaking market news stocks bonds cryptocurrency when:24h","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":true,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false}],"top":[],"sid
+2025-01-11 17:30:47,797 - INFO - Found 1 articles from Brave search
+2025-01-11 17:30:47,798 - INFO - Fetching content from: https://www.bloomberg.com/news/videos/2025-01-11/bloomberg-the-close-1-10-2025-video
+2025-01-11 17:30:48,093 - INFO - Successfully extracted 58773 characters from https://www.bloomberg.com/news/videos/2025-01-11/bloomberg-the-close-1-10-2025-video
+2025-01-11 17:30:51,130 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:30:51,410 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:30:51,411 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:30:51,412 - INFO - Article processed: Watch S&P 500 Hit in Worst Day Since ‘Post-Fed Tantrum’ | Bloomberg: The Close 1/10/2025 - Bloomberg
+2025-01-11 17:30:51,413 - INFO - Executing Brave search with query: major economic policy announcements federal reserve ECB
+2025-01-11 17:30:52,264 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:30:52,264 - INFO - Brave Search API Response: {"query":{"original":"site:bloomberg.com major economic policy announcements federal reserve ECB when:24h","show_strict_warning":false,"cleaned":"major economic policy announcements federal reserve ECB when:24h","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 17:30:52,264 - INFO - Found 0 articles from Brave search
+2025-01-11 17:30:52,265 - INFO - Executing Brave search with query: significant company earnings market movers
+2025-01-11 17:30:52,436 - INFO - Brave Search API Response Status: 429
+2025-01-11 17:30:52,436 - INFO - Brave Search API Response: {"type":"ErrorResponse","error":{"id":"1023ccf7-3bd6-413e-84b4-964635372401","status":429,"code":"RATE_LIMITED","detail":"Request rate limit exceeded for plan.","meta":{"plan":"Free","rate_limit":1,"rate_current":1,"quota_limit":2000,"quota_current":40,"component":"rate_limiter"}},"time":1736638252}
+2025-01-11 17:30:52,437 - ERROR - Brave Search API error: 429 Client Error: Too Many Requests for url: https://api.search.brave.com/res/v1/web/search?q=site%3Abloomberg.com+significant+company+earnings+market+movers+when%3A24h&count=10&search_lang=en&freshness=pd&text_format=raw
+2025-01-11 17:30:52,438 - INFO - Finished processing financial news
+2025-01-11 17:31:52,429 - INFO - Supabase client initialized successfully
+2025-01-11 17:31:52,430 - INFO - Gemini API configured successfully
+2025-01-11 17:31:52,431 - INFO - Starting financial news processing
+2025-01-11 17:31:52,431 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 17:31:54,838 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:31:54,838 - INFO - Brave Search API Response: {"query":{"original":"site:(bloomberg.com OR reuters.com OR cnbc.com OR ft.com) stock market news today","show_strict_warning":false,"cleaned":"reuters.com cnbc.com ft.com stock market news today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 17:31:54,839 - INFO - Found 0 articles from Brave search
+2025-01-11 17:31:54,840 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 17:31:57,203 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:31:57,204 - INFO - Brave Search API Response: {"query":{"original":"site:(bloomberg.com OR reuters.com OR cnbc.com OR ft.com) financial markets update","show_strict_warning":false,"cleaned":"reuters.com cnbc.com ft.com financial markets update","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 17:31:57,204 - INFO - Found 0 articles from Brave search
+2025-01-11 17:31:57,205 - INFO - Executing Brave search with query: market analysis today
+2025-01-11 17:31:59,579 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:31:59,579 - INFO - Brave Search API Response: {"query":{"original":"site:(bloomberg.com OR reuters.com OR cnbc.com OR ft.com) market analysis today","show_strict_warning":false,"cleaned":"reuters.com cnbc.com ft.com market analysis today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 17:31:59,580 - INFO - Found 0 articles from Brave search
+2025-01-11 17:31:59,581 - INFO - Executing Brave search with query: trading stocks news
+2025-01-11 17:32:01,985 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:32:01,986 - INFO - Brave Search API Response: {"query":{"original":"site:(bloomberg.com OR reuters.com OR cnbc.com OR ft.com) trading stocks news","show_strict_warning":false,"cleaned":"reuters.com cnbc.com ft.com trading stocks news","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 17:32:01,986 - INFO - Found 0 articles from Brave search
+2025-01-11 17:32:01,987 - INFO - Executing Brave search with query: market movers today
+2025-01-11 17:32:04,369 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:32:04,370 - INFO - Brave Search API Response: {"query":{"original":"site:(bloomberg.com OR reuters.com OR cnbc.com OR ft.com) market movers today","show_strict_warning":false,"cleaned":"reuters.com cnbc.com ft.com market movers today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 17:32:04,370 - INFO - Found 0 articles from Brave search
+2025-01-11 17:32:04,371 - INFO - Finished processing financial news
+2025-01-11 17:32:32,065 - INFO - Supabase client initialized successfully
+2025-01-11 17:32:32,066 - INFO - Gemini API configured successfully
+2025-01-11 17:32:32,066 - INFO - Starting financial news processing
+2025-01-11 17:32:32,067 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 17:32:32,067 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 17:32:35,042 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:32:35,042 - INFO - Brave Search API Response: {"query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"stock market news today","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false},{"type":"web","index":1,"al
+2025-01-11 17:32:35,043 - INFO - Found 3 articles from Brave search
+2025-01-11 17:32:35,044 - INFO - Fetching content from: https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 17:32:35,765 - INFO - Successfully extracted 19666 characters from https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 17:32:38,043 - INFO - Storing article from www.cnbc.com
+2025-01-11 17:32:38,350 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:32:38,351 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:32:38,351 - INFO - Article processed: Stock market news for Jan. 10, 2025
+2025-01-11 17:32:38,351 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:32:38,785 - INFO - Successfully extracted 44558 characters from https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:32:45,417 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:32:45,725 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:32:45,726 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:32:45,727 - INFO - Article processed: Stock Market Today: Dow, S&P Live Updates for January 10 - Bloomberg
+2025-01-11 17:32:45,727 - INFO - Fetching content from: https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:32:46,103 - INFO - Successfully extracted 6498 characters from https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:32:51,114 - INFO - Storing article from www.reuters.com
+2025-01-11 17:32:51,351 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:32:51,352 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:32:51,352 - INFO - Article processed: Treasury yields rise, stock falls pressured by stronger-than-expected US jobs data | Reuters
+2025-01-11 17:32:51,352 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 17:32:51,353 - INFO - Search query: financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 17:32:54,199 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:32:54,199 - INFO - Brave Search API Response: {"query":{"original":"financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"financial markets update","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":true,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false}],"top":[],"side":[]},"type
+2025-01-11 17:32:54,200 - INFO - Found 1 articles from Brave search
+2025-01-11 17:32:54,200 - INFO - Fetching content from: https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:32:55,647 - INFO - Successfully extracted 38467 characters from https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:32:55,787 - ERROR - Error processing financial news: 429 Resource has been exhausted (e.g. check quota).
+Traceback (most recent call last):
+  File "/Users/nischal/Documents/GitProjects/AIAgent/finance_news_v1.py", line 241, in process_financial_news
+    analysis = await chat.send_message_async(analysis_prompt)
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 707, in send_message_async
+    response = await self.model.generate_content_async(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 406, in generate_content
+    response = await rpc(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 230, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 160, in retry_target
+    _retry_error_helper(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 155, in retry_target
+    return await target()
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
+2025-01-11 17:32:55,805 - INFO - Finished processing financial news
+2025-01-11 17:34:08,227 - INFO - Supabase client initialized successfully
+2025-01-11 17:34:08,228 - INFO - Gemini API configured successfully
+2025-01-11 17:34:08,229 - INFO - Starting financial news processing
+2025-01-11 17:34:08,230 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 17:34:08,230 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 17:34:10,446 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:34:10,446 - INFO - Brave Search API Response: {"query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"stock market news today","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false},{"type":"web","index":1,"al
+2025-01-11 17:34:10,446 - INFO - Found 3 articles from Brave search
+2025-01-11 17:34:10,447 - INFO - Fetching content from: https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 17:34:10,695 - INFO - Successfully extracted 19666 characters from https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 17:34:13,726 - INFO - Storing article from www.cnbc.com
+2025-01-11 17:34:14,039 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:34:14,041 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:34:14,041 - INFO - Article processed: Stock market news for Jan. 10, 2025
+2025-01-11 17:34:14,041 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:34:14,238 - INFO - Successfully extracted 44558 characters from https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:34:19,522 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:34:19,831 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:34:19,832 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:34:19,832 - INFO - Article processed: Stock Market Today: Dow, S&P Live Updates for January 10 - Bloomberg
+2025-01-11 17:34:19,833 - INFO - Fetching content from: https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:34:20,351 - INFO - Successfully extracted 6498 characters from https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:34:24,764 - INFO - Storing article from www.reuters.com
+2025-01-11 17:34:24,990 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:34:24,991 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'summary' column of 'finance_news' in the schema cache"}
+2025-01-11 17:34:24,991 - INFO - Article processed: Treasury yields rise, stock falls pressured by stronger-than-expected US jobs data | Reuters
+2025-01-11 17:34:24,993 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 17:34:24,993 - INFO - Search query: financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 17:34:27,190 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:34:27,190 - INFO - Brave Search API Response: {"query":{"original":"financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"financial markets update","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":true,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false}],"top":[],"side":[]},"type
+2025-01-11 17:34:27,191 - INFO - Found 1 articles from Brave search
+2025-01-11 17:34:27,191 - INFO - Fetching content from: https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:34:29,035 - INFO - Successfully extracted 40445 characters from https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:34:29,162 - ERROR - Error processing financial news: 429 Resource has been exhausted (e.g. check quota).
+Traceback (most recent call last):
+  File "/Users/nischal/Documents/GitProjects/AIAgent/first_ai_agent/finance_news.py", line 241, in process_financial_news
+    analysis = await chat.send_message_async(analysis_prompt)
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 707, in send_message_async
+    response = await self.model.generate_content_async(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 406, in generate_content
+    response = await rpc(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 230, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 160, in retry_target
+    _retry_error_helper(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 155, in retry_target
+    return await target()
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
+2025-01-11 17:34:29,177 - INFO - Finished processing financial news
+2025-01-11 17:36:28,684 - INFO - Supabase client initialized successfully
+2025-01-11 17:36:28,685 - INFO - Gemini API configured successfully
+2025-01-11 17:36:28,686 - INFO - Starting financial news processing
+2025-01-11 17:36:28,686 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 17:36:28,686 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 17:36:30,899 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:36:30,899 - INFO - Brave Search API Response: {"query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"stock market news today","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false},{"type":"web","index":1,"al
+2025-01-11 17:36:30,900 - INFO - Found 3 articles from Brave search
+2025-01-11 17:36:30,900 - INFO - Fetching content from: https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 17:36:31,998 - INFO - Successfully extracted 19666 characters from https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 17:36:35,203 - INFO - Storing article from www.cnbc.com
+2025-01-11 17:36:35,564 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:36:35,565 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 17:36:35,565 - INFO - Article processed: Stock market news for Jan. 10, 2025
+2025-01-11 17:36:35,566 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:36:35,886 - INFO - Successfully extracted 44558 characters from https://www.bloomberg.com/news/articles/2025-01-09/stock-market-today-dow-s-p-live-updates
+2025-01-11 17:36:41,244 - INFO - Storing article from www.bloomberg.com
+2025-01-11 17:36:41,493 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:36:41,495 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 17:36:41,495 - INFO - Article processed: Stock Market Today: Dow, S&P Live Updates for January 10 - Bloomberg
+2025-01-11 17:36:41,495 - INFO - Fetching content from: https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:36:41,971 - INFO - Successfully extracted 6530 characters from https://www.reuters.com/markets/global-markets-wrapup-1-2025-01-10/
+2025-01-11 17:36:46,876 - INFO - Storing article from www.reuters.com
+2025-01-11 17:36:47,130 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 17:36:47,131 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 17:36:47,132 - INFO - Article processed: Treasury yields rise, stock falls pressured by stronger-than-expected US jobs data | Reuters
+2025-01-11 17:36:47,132 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 17:36:47,132 - INFO - Search query: financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 17:36:49,338 - INFO - Brave Search API Response Status: 200
+2025-01-11 17:36:49,341 - INFO - Brave Search API Response: {"query":{"original":"financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"financial markets update","is_navigational":false,"is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":true,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"web","index":0,"all":false}],"top":[],"side":[]},"type
+2025-01-11 17:36:49,342 - INFO - Found 1 articles from Brave search
+2025-01-11 17:36:49,343 - INFO - Fetching content from: https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:36:50,350 - INFO - Successfully extracted 37274 characters from https://www.bloomberg.com/latest/uk-markets-today
+2025-01-11 17:36:50,476 - ERROR - Error processing financial news: 429 Resource has been exhausted (e.g. check quota).
+Traceback (most recent call last):
+  File "/Users/nischal/Documents/GitProjects/AIAgent/first_ai_agent/finance_news.py", line 241, in process_financial_news
+    analysis = await chat.send_message_async(analysis_prompt)
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 707, in send_message_async
+    response = await self.model.generate_content_async(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 406, in generate_content
+    response = await rpc(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 230, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 160, in retry_target
+    _retry_error_helper(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 155, in retry_target
+    return await target()
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
+2025-01-11 17:36:50,492 - INFO - Finished processing financial news
