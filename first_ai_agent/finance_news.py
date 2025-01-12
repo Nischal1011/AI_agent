@@ -74,21 +74,22 @@ def execute_brave_search(query: str) -> list:
             "X-Subscription-Token": os.getenv("BRAVE_API_KEY")
         }
         
-        # Fix the site filter syntax
+        # Modify the query format to use individual site filters
+        site_filters = "site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com"
         params = {
-            # Each site needs to be a separate site: operator
-            "q": f"{clean_query} (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)",
+            "q": f"{clean_query} ({site_filters})",  # Keep the original format
             "count": 10,
             "search_lang": "en",
-            "freshness": "pd",
-            "text_format": "raw"
+            "freshness": "pd",  # Change to "past day"
+            "text_format": "raw",
+            "safesearch": "off"  # Add this to ensure we get results
         }
         
         # Add debug logging for the actual query
         logger.info(f"Search query: {params['q']}")
         
         response = requests.get(
-            "https://api.search.brave.com/res/v1/web/search",
+            "https://api.search.brave.com/res/v1/news/search",  # Changed to news search endpoint
             headers=headers,
             params=params,
             timeout=10
@@ -99,11 +100,12 @@ def execute_brave_search(query: str) -> list:
         
         # Add debug logging
         logger.info(f"Brave Search API Response Status: {response.status_code}")
-        logger.info(f"Brave Search API Response: {response.text[:500]}")  # First 500 chars
+        logger.info(f"Brave Search API Response: {response.text[:500]}")
         
         response.raise_for_status()
         
-        results = response.json().get("web", {}).get("results", [])
+        # Changed from 'web' to 'results' for news endpoint
+        results = response.json().get("results", [])
         logger.info(f"Found {len(results)} articles from Brave search")
         return [
             {

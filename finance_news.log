@@ -552,3 +552,82 @@ Traceback (most recent call last):
     raise exceptions.from_grpc_error(rpc_error) from rpc_error
 google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
 2025-01-11 17:36:50,492 - INFO - Finished processing financial news
+2025-01-11 18:01:12,107 - INFO - Supabase client initialized successfully
+2025-01-11 18:01:12,107 - INFO - Gemini API configured successfully
+2025-01-11 18:01:12,108 - INFO - Starting financial news processing
+2025-01-11 18:01:12,108 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:01:12,108 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:01:15,101 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:01:15,101 - INFO - Brave Search API Response: {"query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"stock market news today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:01:15,101 - INFO - Found 0 articles from Brave search
+2025-01-11 18:01:15,101 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:01:15,102 - INFO - Search query: financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:01:17,921 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:01:17,924 - INFO - Brave Search API Response: {"query":{"original":"financial markets update (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"financial markets update","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:01:17,925 - INFO - Found 0 articles from Brave search
+2025-01-11 18:01:17,926 - INFO - Executing Brave search with query: market analysis today
+2025-01-11 18:01:17,926 - INFO - Search query: market analysis today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:01:20,725 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:01:20,726 - INFO - Brave Search API Response: {"query":{"original":"market analysis today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"market analysis today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:01:20,726 - INFO - Found 0 articles from Brave search
+2025-01-11 18:01:20,727 - INFO - Executing Brave search with query: trading stocks news
+2025-01-11 18:01:20,727 - INFO - Search query: trading stocks news (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:01:23,442 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:01:23,444 - INFO - Brave Search API Response: {"query":{"original":"trading stocks news (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"trading stocks news","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:01:23,445 - INFO - Found 0 articles from Brave search
+2025-01-11 18:01:23,445 - INFO - Executing Brave search with query: market movers today
+2025-01-11 18:01:23,446 - INFO - Search query: market movers today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:01:26,220 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:01:26,221 - INFO - Brave Search API Response: {"query":{"original":"market movers today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","show_strict_warning":false,"cleaned":"market movers today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:01:26,221 - INFO - Found 0 articles from Brave search
+2025-01-11 18:01:26,222 - INFO - Finished processing financial news
+2025-01-11 18:02:18,344 - INFO - Supabase client initialized successfully
+2025-01-11 18:02:18,345 - INFO - Gemini API configured successfully
+2025-01-11 18:02:18,346 - INFO - Starting financial news processing
+2025-01-11 18:02:18,346 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:02:18,346 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:02:20,933 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:02:20,933 - INFO - Brave Search API Response: {"type":"news","query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","age":
+2025-01-11 18:02:20,934 - INFO - Found 5 articles from Brave search
+2025-01-11 18:02:20,935 - INFO - Fetching content from: https://www.bloomberg.com/
+2025-01-11 18:02:21,147 - INFO - Successfully extracted 117350 characters from https://www.bloomberg.com/
+2025-01-11 18:02:23,948 - INFO - Storing article from www.bloomberg.com
+2025-01-11 18:02:24,357 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:02:24,360 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:02:24,360 - INFO - Article processed: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News
+2025-01-11 18:02:24,360 - INFO - Fetching content from: https://www.reuters.com/markets/us/
+2025-01-11 18:02:24,772 - INFO - Successfully extracted 2708 characters from https://www.reuters.com/markets/us/
+2025-01-11 18:02:27,715 - INFO - Storing article from www.reuters.com
+2025-01-11 18:02:27,912 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:02:27,914 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:02:27,914 - INFO - Article processed: U.S. Stock Market Headlines | Breaking Stock Market News | Reuters
+2025-01-11 18:02:27,914 - INFO - Fetching content from: https://www.reuters.com/
+2025-01-11 18:02:28,244 - INFO - Successfully extracted 7006 characters from https://www.reuters.com/
+2025-01-11 18:02:32,381 - INFO - Storing article from www.reuters.com
+2025-01-11 18:02:32,589 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:02:32,590 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:02:32,590 - INFO - Article processed: Reuters Reuters | Breaking International News & Views
+2025-01-11 18:02:32,590 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-11/the-stock-market-faces-reality-check-in-high-bar-earning-season
+2025-01-11 18:02:32,987 - INFO - Successfully extracted 40941 characters from https://www.bloomberg.com/news/articles/2025-01-11/the-stock-market-faces-reality-check-in-high-bar-earning-season
+2025-01-11 18:02:33,126 - ERROR - Error processing financial news: 429 Resource has been exhausted (e.g. check quota).
+Traceback (most recent call last):
+  File "/Users/nischal/Documents/GitProjects/AIAgent/first_ai_agent/finance_news.py", line 243, in process_financial_news
+    analysis = await chat.send_message_async(analysis_prompt)
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 707, in send_message_async
+    response = await self.model.generate_content_async(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 406, in generate_content
+    response = await rpc(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 230, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 160, in retry_target
+    _retry_error_helper(
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 155, in retry_target
+    return await target()
+  File "/Users/nischal/Documents/GitProjects/AIAgent/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
+2025-01-11 18:02:33,145 - INFO - Finished processing financial news
