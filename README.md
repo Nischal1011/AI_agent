@@ -37,6 +37,14 @@ A Python-based AI agent that automatically collects, analyzes, and stores financ
    - `created_at`: timestamp with timezone (Default: now())
    - `price`: float
 
+Here is how the data looks like in the database:
+
+![alt text](image.png)
+
+
+The above is the finance_news table.
+
+
 ## Setup
 
 1. Clone the repository
