@@ -631,3 +631,224 @@ Traceback (most recent call last):
     raise exceptions.from_grpc_error(rpc_error) from rpc_error
 google.api_core.exceptions.ResourceExhausted: 429 Resource has been exhausted (e.g. check quota).
 2025-01-11 18:02:33,145 - INFO - Finished processing financial news
+2025-01-11 18:04:59,063 - INFO - Supabase client initialized successfully
+2025-01-11 18:04:59,063 - INFO - Gemini API configured successfully
+2025-01-11 18:04:59,064 - INFO - Starting financial news processing
+2025-01-11 18:04:59,064 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:04:59,065 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:05:01,530 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:05:01,530 - INFO - Brave Search API Response: {"type":"news","query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","age":
+2025-01-11 18:05:01,531 - INFO - Found 5 articles from Brave search
+2025-01-11 18:05:01,532 - INFO - Fetching content from: https://www.bloomberg.com/
+2025-01-11 18:05:01,781 - INFO - Successfully extracted 114055 characters from https://www.bloomberg.com/
+2025-01-11 18:05:03,781 - ERROR - Error processing article: name 'analysis_prompt' is not defined
+2025-01-11 18:05:08,782 - INFO - Fetching content from: https://www.reuters.com/markets/us/
+2025-01-11 18:05:09,147 - INFO - Successfully extracted 2708 characters from https://www.reuters.com/markets/us/
+2025-01-11 18:05:11,148 - ERROR - Error processing article: name 'analysis_prompt' is not defined
+2025-01-11 18:05:16,149 - INFO - Fetching content from: https://www.reuters.com/
+2025-01-11 18:05:16,425 - INFO - Successfully extracted 7006 characters from https://www.reuters.com/
+2025-01-11 18:05:18,427 - ERROR - Error processing article: name 'analysis_prompt' is not defined
+2025-01-11 18:05:23,428 - INFO - Fetching content from: https://www.bloomberg.com/news/articles/2025-01-11/the-stock-market-faces-reality-check-in-high-bar-earning-season
+2025-01-11 18:05:23,633 - INFO - Successfully extracted 40941 characters from https://www.bloomberg.com/news/articles/2025-01-11/the-stock-market-faces-reality-check-in-high-bar-earning-season
+2025-01-11 18:05:25,636 - ERROR - Error processing article: name 'analysis_prompt' is not defined
+2025-01-11 18:05:30,637 - INFO - Fetching content from: https://www.reuters.com/world/japan/
+2025-01-11 18:05:30,946 - INFO - Successfully extracted 2526 characters from https://www.reuters.com/world/japan/
+2025-01-11 18:05:32,902 - INFO - Supabase client initialized successfully
+2025-01-11 18:05:32,902 - INFO - Gemini API configured successfully
+2025-01-11 18:05:32,903 - INFO - Starting financial news processing
+2025-01-11 18:05:32,903 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:05:32,903 - INFO - Search query: stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)
+2025-01-11 18:05:35,080 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:05:35,080 - INFO - Brave Search API Response: {"type":"news","query":{"original":"stock market news today (site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com)","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","age":
+2025-01-11 18:05:35,080 - INFO - Found 5 articles from Brave search
+2025-01-11 18:05:35,081 - INFO - Fetching content from: https://www.bloomberg.com/
+2025-01-11 18:05:35,283 - INFO - Successfully extracted 100238 characters from https://www.bloomberg.com/
+2025-01-11 18:05:40,756 - INFO - Storing article from www.bloomberg.com
+2025-01-11 18:05:41,167 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:05:41,169 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:05:41,169 - INFO - Article processed: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News
+2025-01-11 18:05:44,171 - INFO - Fetching content from: https://www.reuters.com/markets/us/
+2025-01-11 18:05:44,406 - INFO - Successfully extracted 2708 characters from https://www.reuters.com/markets/us/
+2025-01-11 18:05:49,417 - INFO - Storing article from www.reuters.com
+2025-01-11 18:05:49,656 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:05:49,657 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:05:49,657 - INFO - Article processed: U.S. Stock Market Headlines | Breaking Stock Market News | Reuters
+2025-01-11 18:05:52,658 - INFO - Fetching content from: https://www.reuters.com/
+2025-01-11 18:05:52,909 - INFO - Successfully extracted 7027 characters from https://www.reuters.com/
+2025-01-11 18:05:56,405 - INFO - Storing article from www.reuters.com
+2025-01-11 18:05:56,660 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:05:56,661 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:05:56,661 - INFO - Article processed: Reuters Reuters | Breaking International News & Views
+2025-01-11 18:05:59,663 - INFO - Finished processing financial news
+2025-01-11 18:07:02,961 - INFO - Supabase client initialized successfully
+2025-01-11 18:07:02,961 - INFO - Gemini API configured successfully
+2025-01-11 18:07:02,963 - INFO - Starting financial news processing
+2025-01-11 18:07:02,963 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:07:02,963 - INFO - Search query: stock market news today (site:bloomberg.com OR site:cnbc.com OR site:ft.com OR site:wsj.com OR site:marketwatch.com)
+2025-01-11 18:07:05,481 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:07:05,483 - INFO - Found 2 articles from Brave search
+2025-01-11 18:07:05,484 - INFO - Fetching content from: https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:07:06,058 - INFO - Successfully extracted 7343 characters from https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:07:08,556 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:07:08,835 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:07:08,836 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:07:08,836 - INFO - Article processed: Behind the stock sell-off and whether the bull market is at risk
+2025-01-11 18:07:11,837 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:07:11,839 - INFO - Search query: financial markets update (site:bloomberg.com OR site:cnbc.com OR site:ft.com OR site:wsj.com OR site:marketwatch.com)
+2025-01-11 18:07:14,408 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:07:14,408 - INFO - Found 2 articles from Brave search
+2025-01-11 18:07:14,409 - INFO - Fetching content from: https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:07:14,972 - INFO - Successfully extracted 18144 characters from https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:07:19,263 - INFO - Storing article from www.bloomberg.com
+2025-01-11 18:07:19,503 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:07:19,504 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:07:19,504 - INFO - Article processed: Financials Sector & Industry Performance - Bloomberg
+2025-01-11 18:07:22,506 - INFO - Executing Brave search with query: market analysis today
+2025-01-11 18:07:22,506 - INFO - Search query: market analysis today (site:bloomberg.com OR site:cnbc.com OR site:ft.com OR site:wsj.com OR site:marketwatch.com)
+2025-01-11 18:07:25,159 - INFO - Brave Search API Response Status: 200
+2025-01-11 18:07:25,159 - INFO - Found 1 articles from Brave search
+2025-01-11 18:07:25,161 - INFO - Finished processing financial news
+2025-01-11 18:08:05,599 - INFO - Supabase client initialized successfully
+2025-01-11 18:08:05,600 - INFO - Gemini API configured successfully
+2025-01-11 18:08:05,601 - INFO - Starting financial news processing
+2025-01-11 18:08:05,601 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:08:05,601 - INFO - Search query: stock market news today (site:bloomberg.com/news OR site:cnbc.com/2024 OR site:ft.com/content OR site:wsj.com/articles OR site:marketwatch.com/story) (article OR news OR story)
+2025-01-11 18:08:08,292 - INFO - Found 0 articles from Brave search
+2025-01-11 18:08:08,292 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:08:08,292 - INFO - Search query: financial markets update (site:bloomberg.com/news OR site:cnbc.com/2024 OR site:ft.com/content OR site:wsj.com/articles OR site:marketwatch.com/story) (article OR news OR story)
+2025-01-11 18:08:10,796 - INFO - Found 0 articles from Brave search
+2025-01-11 18:08:10,797 - INFO - Executing Brave search with query: market analysis today
+2025-01-11 18:08:10,797 - INFO - Search query: market analysis today (site:bloomberg.com/news OR site:cnbc.com/2024 OR site:ft.com/content OR site:wsj.com/articles OR site:marketwatch.com/story) (article OR news OR story)
+2025-01-11 18:08:13,385 - INFO - Found 0 articles from Brave search
+2025-01-11 18:08:13,387 - INFO - Finished processing financial news
+2025-01-11 18:08:46,909 - INFO - Supabase client initialized successfully
+2025-01-11 18:08:46,909 - INFO - Gemini API configured successfully
+2025-01-11 18:08:46,910 - INFO - Starting financial news processing
+2025-01-11 18:08:46,911 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:08:46,911 - INFO - Search query: stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:08:49,858 - INFO - Response status: 200
+2025-01-11 18:08:49,858 - INFO - Response content: {"query":{"original":"stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","show_strict_warning":false,"cleaned":"stock market news today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[{"type":"news","all":true}],"top":[],"side":[]},"news":{"type":"news","results":[{"ti
+2025-01-11 18:08:49,858 - INFO - Found 0 articles from Brave search
+2025-01-11 18:08:49,859 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:08:49,859 - INFO - Search query: financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:08:52,809 - INFO - Response status: 200
+2025-01-11 18:08:52,811 - INFO - Response content: {"query":{"original":"financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","show_strict_warning":false,"cleaned":"financial markets update","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:08:52,811 - INFO - Found 0 articles from Brave search
+2025-01-11 18:08:52,812 - INFO - Executing Brave search with query: market analysis today
+2025-01-11 18:08:52,812 - INFO - Search query: market analysis today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:08:55,781 - INFO - Response status: 200
+2025-01-11 18:08:55,781 - INFO - Response content: {"query":{"original":"market analysis today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","show_strict_warning":false,"cleaned":"market analysis today","is_news_breaking":false,"spellcheck_off":false,"country":"us","bad_results":false,"should_fallback":true,"postal_code":"","city":"","header_country":"","more_results_available":false,"state":""},"mixed":{"type":"mixed","main":[],"top":[],"side":[]},"type":"search"}
+2025-01-11 18:08:55,781 - INFO - Found 0 articles from Brave search
+2025-01-11 18:08:55,783 - INFO - Finished processing financial news
+2025-01-11 18:09:32,341 - INFO - Supabase client initialized successfully
+2025-01-11 18:09:32,342 - INFO - Gemini API configured successfully
+2025-01-11 18:09:32,343 - INFO - Starting financial news processing
+2025-01-11 18:09:32,343 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:09:32,343 - INFO - Search query: stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:09:34,825 - INFO - Response status: 200
+2025-01-11 18:09:34,825 - INFO - Response content: {"type":"news","query":{"original":"stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Stock market news for Jan. 10, 2025","url":"https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html","description":"Small-cap stocks, also sensitive to borrowing rates, dropped with the Russell 2000 index losing more than 2%. \"Rates are moving a little bi
+2025-01-11 18:09:34,826 - INFO - Found 0 articles from Brave search
+2025-01-11 18:09:34,827 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:09:34,827 - INFO - Search query: financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:09:37,221 - INFO - Response status: 200
+2025-01-11 18:09:37,221 - INFO - Response content: {"type":"news","query":{"original":"financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","a
+2025-01-11 18:09:37,222 - INFO - Found 0 articles from Brave search
+2025-01-11 18:09:37,222 - INFO - Executing Brave search with query: market analysis today
+2025-01-11 18:09:37,223 - INFO - Search query: market analysis today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:09:39,672 - INFO - Response status: 200
+2025-01-11 18:09:39,672 - INFO - Response content: {"type":"news","query":{"original":"market analysis today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","age"
+2025-01-11 18:09:39,673 - INFO - Found 0 articles from Brave search
+2025-01-11 18:09:39,675 - INFO - Finished processing financial news
+2025-01-11 18:10:02,134 - INFO - Supabase client initialized successfully
+2025-01-11 18:10:02,135 - INFO - Gemini API configured successfully
+2025-01-11 18:10:02,135 - INFO - Starting financial news processing
+2025-01-11 18:10:02,136 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:10:02,136 - INFO - Search query: stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:10:04,320 - INFO - Response status: 200
+2025-01-11 18:10:04,321 - INFO - Response content: {"type":"news","query":{"original":"stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Stock market news for Jan. 10, 2025","url":"https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html","description":"Small-cap stocks, also sensitive to borrowing rates, dropped with the Russell 2000 index losing more than 2%. \"Rates are moving a little bi
+2025-01-11 18:10:04,321 - INFO - Found 3 articles from Brave search
+2025-01-11 18:10:04,322 - INFO - Fetching content from: https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 18:10:04,655 - INFO - Successfully extracted 19666 characters from https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 18:10:07,197 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:10:07,411 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:10:07,413 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:10:07,413 - INFO - Article processed: Stock market news for Jan. 10, 2025
+2025-01-11 18:10:10,415 - INFO - Fetching content from: https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:10:10,663 - INFO - Successfully extracted 7343 characters from https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:10:13,766 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:10:14,024 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:10:14,025 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:10:14,025 - INFO - Article processed: Behind the stock sell-off and whether the bull market is at risk
+2025-01-11 18:10:17,027 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:10:17,027 - INFO - Search query: financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:10:19,469 - INFO - Response status: 200
+2025-01-11 18:10:19,470 - INFO - Response content: {"type":"news","query":{"original":"financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","a
+2025-01-11 18:10:19,470 - INFO - Found 2 articles from Brave search
+2025-01-11 18:10:19,471 - INFO - Fetching content from: https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:10:19,642 - INFO - Successfully extracted 18144 characters from https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:10:25,732 - INFO - Storing article from www.bloomberg.com
+2025-01-11 18:10:25,973 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:10:25,973 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:10:25,973 - INFO - Article processed: Financials Sector & Industry Performance - Bloomberg
+2025-01-11 18:10:28,975 - INFO - Finished processing financial news
+2025-01-11 18:11:41,296 - INFO - Supabase client initialized successfully
+2025-01-11 18:11:41,300 - INFO - Gemini API configured successfully
+2025-01-11 18:11:41,301 - INFO - Starting financial news processing
+2025-01-11 18:11:41,301 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:11:41,301 - INFO - Search query: stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:11:43,915 - INFO - Response status: 200
+2025-01-11 18:11:43,915 - INFO - Response content: {"type":"news","query":{"original":"stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Stock market news for Jan. 10, 2025","url":"https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html","description":"Small-cap stocks, also sensitive to borrowing rates, dropped with the Russell 2000 index losing more than 2%. \"Rates are moving a little bi
+2025-01-11 18:11:43,916 - INFO - Found 3 articles from Brave search
+2025-01-11 18:11:43,918 - INFO - Fetching content from: https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 18:11:44,204 - INFO - Successfully extracted 19666 characters from https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 18:11:47,137 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:11:47,544 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:11:47,547 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:11:47,547 - INFO - Article processed: Stock market news for Jan. 10, 2025
+2025-01-11 18:11:50,559 - INFO - Fetching content from: https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:11:50,825 - INFO - Successfully extracted 7343 characters from https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:11:54,716 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:11:55,024 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:11:55,026 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:11:55,027 - INFO - Article processed: Behind the stock sell-off and whether the bull market is at risk
+2025-01-11 18:11:58,033 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:11:58,036 - INFO - Search query: financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:12:00,505 - INFO - Response status: 200
+2025-01-11 18:12:00,508 - INFO - Response content: {"type":"news","query":{"original":"financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","a
+2025-01-11 18:12:00,510 - INFO - Found 2 articles from Brave search
+2025-01-11 18:12:00,516 - INFO - Fetching content from: https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:12:00,750 - INFO - Successfully extracted 18592 characters from https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:12:06,283 - INFO - Storing article from www.bloomberg.com
+2025-01-11 18:12:06,447 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 400 Bad Request"
+2025-01-11 18:12:06,448 - ERROR - Error storing article in Supabase: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'title' column of 'finance_news' in the schema cache"}
+2025-01-11 18:12:06,448 - INFO - Article processed: Financials Sector & Industry Performance - Bloomberg
+2025-01-11 18:12:09,457 - INFO - Finished processing financial news
+2025-01-11 18:13:04,941 - INFO - Supabase client initialized successfully
+2025-01-11 18:13:04,942 - INFO - Gemini API configured successfully
+2025-01-11 18:13:04,942 - INFO - Starting financial news processing
+2025-01-11 18:13:04,943 - INFO - Executing Brave search with query: stock market news today
+2025-01-11 18:13:04,943 - INFO - Search query: stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:13:07,151 - INFO - Response status: 200
+2025-01-11 18:13:07,151 - INFO - Response content: {"type":"news","query":{"original":"stock market news today site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Stock market news for Jan. 10, 2025","url":"https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html","description":"Small-cap stocks, also sensitive to borrowing rates, dropped with the Russell 2000 index losing more than 2%. \"Rates are moving a little bi
+2025-01-11 18:13:07,152 - INFO - Found 3 articles from Brave search
+2025-01-11 18:13:07,152 - INFO - Fetching content from: https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 18:13:07,455 - INFO - Successfully extracted 19666 characters from https://www.cnbc.com/2025/01/09/stock-market-today-live-updates.html
+2025-01-11 18:13:10,328 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:13:10,692 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 18:13:10,758 - INFO - Article processed: Stock market news for Jan. 10, 2025
+2025-01-11 18:13:13,759 - INFO - Fetching content from: https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:13:14,017 - INFO - Successfully extracted 7343 characters from https://www.cnbc.com/2025/01/11/behind-the-stock-sell-off-and-whether-the-bull-market-is-at-risk.html
+2025-01-11 18:13:17,038 - INFO - Storing article from www.cnbc.com
+2025-01-11 18:13:17,322 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 18:13:17,343 - INFO - Article processed: Behind the stock sell-off and whether the bull market is at risk
+2025-01-11 18:13:20,344 - INFO - Executing Brave search with query: financial markets update
+2025-01-11 18:13:20,344 - INFO - Search query: financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com
+2025-01-11 18:13:22,540 - INFO - Response status: 200
+2025-01-11 18:13:22,540 - INFO - Response content: {"type":"news","query":{"original":"financial markets update site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com","spellcheck_off":false,"show_strict_warning":false},"results":[{"type":"news_result","title":"Bloomberg - Business News, Stock Markets, Finance, Breaking & World News","url":"https://www.bloomberg.com/","description":"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News","a
+2025-01-11 18:13:22,540 - INFO - Found 2 articles from Brave search
+2025-01-11 18:13:22,541 - INFO - Fetching content from: https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:13:22,735 - INFO - Successfully extracted 18592 characters from https://www.bloomberg.com/markets/sectors/financials
+2025-01-11 18:13:26,260 - INFO - Storing article from www.bloomberg.com
+2025-01-11 18:13:26,563 - INFO - HTTP Request: POST https://gamtuwwlhpasfplhbiyi.supabase.co/rest/v1/finance_news "HTTP/2 201 Created"
+2025-01-11 18:13:26,587 - INFO - Article processed: Financials Sector & Industry Performance - Bloomberg
+2025-01-11 18:13:29,591 - INFO - Finished processing financial news

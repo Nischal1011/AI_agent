@@ -74,50 +74,56 @@ def execute_brave_search(query: str) -> list:
             "X-Subscription-Token": os.getenv("BRAVE_API_KEY")
         }
         
-        # Modify the query format to use individual site filters
-        site_filters = "site:bloomberg.com OR site:reuters.com OR site:cnbc.com OR site:ft.com"
+        # Simplified site filters
+        site_filters = "site:bloomberg.com OR site:cnbc.com OR site:wsj.com OR site:marketwatch.com"
+        
         params = {
-            "q": f"{clean_query} ({site_filters})",  # Keep the original format
+            "q": f"{clean_query} {site_filters}",  # Removed parentheses
             "count": 10,
             "search_lang": "en",
-            "freshness": "pd",  # Change to "past day"
-            "text_format": "raw",
-            "safesearch": "off"  # Add this to ensure we get results
+            "freshness": "pd",
+            "text_format": "raw"
         }
         
-        # Add debug logging for the actual query
         logger.info(f"Search query: {params['q']}")
         
         response = requests.get(
-            "https://api.search.brave.com/res/v1/news/search",  # Changed to news search endpoint
+            "https://api.search.brave.com/res/v1/news/search",  # Ensure using the correct endpoint
             headers=headers,
             params=params,
             timeout=10
         )
         
-        # Add delay to avoid rate limiting
         time.sleep(2)
-        
-        # Add debug logging
-        logger.info(f"Brave Search API Response Status: {response.status_code}")
-        logger.info(f"Brave Search API Response: {response.text[:500]}")
         
         response.raise_for_status()
         
-        # Changed from 'web' to 'results' for news endpoint
+        # Debug logging
+        logger.info(f"Response status: {response.status_code}")
+        logger.info(f"Response content: {response.text[:500]}")
+        
+        # Ensure we're accessing the correct part of the response
         results = response.json().get("results", [])
         logger.info(f"Found {len(results)} articles from Brave search")
+        
+        # Adjusted filtering logic
+        filtered_results = [
+            result for result in results
+            if result.get("url") and not result.get("url").endswith((".com", ".com/"))
+        ]
+        
         return [
             {
                 "title": result.get("title"),
                 "url": result.get("url"),
                 "description": result.get("description")
             }
-            for result in results
+            for result in filtered_results
         ]
     
     except requests.RequestException as e:
         logger.error(f"Brave Search API error: {e}")
+        logger.error(f"Response content: {e.response.text if hasattr(e, 'response') else 'No response'}")
         return []
 
 def get_article_content(url: str) -> str:
@@ -164,7 +170,6 @@ def store_article_in_supabase(article: dict) -> bool:
     try:
         source = article.get("url", "").split("//")[-1].split("/")[0]
         
-        # Update data structure to match your Supabase table
         data = {
             "title": article.get("title"),
             "url": article.get("url"),
@@ -191,20 +196,18 @@ async def process_financial_news():
         logger.info("Starting financial news processing")
         chat = model.start_chat()
         
-        # Updated search queries to be more general
+        # Reduced number of search queries to avoid rate limits
         search_queries = [
             "stock market news today",
             "financial markets update",
-            "market analysis today",
-            "trading stocks news",
-            "market movers today"
+            "market analysis today"
         ]
         
-        unique_urls = set()  # Track processed URLs
+        unique_urls = set()
         unique_articles = []
         
         for query in search_queries:
-            if len(unique_articles) >= 5:  # Increased target number
+            if len(unique_articles) >= 3:  # Reduced target number
                 break
                 
             articles = execute_brave_search(query)
@@ -212,20 +215,16 @@ async def process_financial_news():
             for article in articles:
                 url = article.get('url')
                 
-                # Skip if we've already processed this URL
-                if url in unique_urls:
+                if url in unique_urls or len(unique_articles) >= 3:
                     continue
                     
-                if len(unique_articles) >= 5:
-                    break
-                
                 unique_urls.add(url)
                 content = get_article_content(url)
                 
-                if not content or len(content) < 500:  # Skip short content
+                if not content or len(content) < 500:
                     continue
                 
-                # Fix the summarization prompt to be explicit about using the provided content
+                # Define the analysis prompt for each article
                 analysis_prompt = f"""Based ONLY on the following article content, provide a concise 3-4 sentence summary of the key financial developments and market implications. 
                 
                 Article Title: {article['title']}
@@ -240,23 +239,32 @@ async def process_financial_news():
                 
                 Summary:"""
                 
-                analysis = await chat.send_message_async(analysis_prompt)
-                
-                if analysis and analysis.text:
-                    article['summary'] = analysis.text.strip()
-                    if len(article['summary']) > 50:  # Basic quality check
-                        unique_articles.append(article)
-                        # Print summary to terminal
-                        print("\n" + "="*80)
-                        print(f"TITLE: {article['title']}")
-                        print(f"SOURCE: {article['url']}")
-                        print("-"*80)
-                        print("SUMMARY:")
-                        print(article['summary'])
-                        print("="*80 + "\n")
-                        
-                        store_article_in_supabase(article)
-                        logger.info(f"Article processed: {article['title']}")
+                try:
+                    analysis = await chat.send_message_async(analysis_prompt)
+                    
+                    if analysis and analysis.text:
+                        article['summary'] = analysis.text.strip()
+                        if len(article['summary']) > 50:
+                            unique_articles.append(article)
+                            print("\n" + "="*80)
+                            print(f"TITLE: {article['title']}")
+                            print(f"SOURCE: {article['url']}")
+                            print("-"*80)
+                            print("SUMMARY:")
+                            print(article['summary'])
+                            print("="*80 + "\n")
+                            
+                            store_article_in_supabase(article)
+                            logger.info(f"Article processed: {article['title']}")
+                            
+                            # Add delay after successful processing
+                            await asyncio.sleep(3)
+                            
+                except Exception as e:
+                    logger.error(f"Error processing article: {e}")
+                    # Add exponential backoff on error
+                    await asyncio.sleep(5)
+                    continue
     
     except Exception as e:
         logger.error(f"Error processing financial news: {e}", exc_info=True)
